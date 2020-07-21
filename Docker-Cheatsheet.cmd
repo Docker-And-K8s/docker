@@ -13,3 +13,19 @@ docker-compose up -d
 docker-compose down
 docker-compose ps
 
+# minikube is for development and is equivalent to EKS or kubernetes
+# it is a program which creates a virtual machine (called node which contains containers)
+# Docker Desktop has a built in kubernetes
+# it is different from kubernetes in docker desktop in the sense that docker creates 
+# a virtual machine when it is installed
+# with minikube it is not so
+
+
+# Kubectl is a program used in development env
+# used to interact with the node
+
+minikube status
+kubectl cluster-info
+
+# Pod - grouping of containers
+# why pod - group very similar contatainers which have discreet functionality to work properly
